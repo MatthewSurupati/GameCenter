@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startScreen">
+
+
+    <fragment
+        android:id="@+id/startScreen"
+        android:name="com.example.quizapp.startScreen"
+        android:label="startScreen"
+        tools:layout="@layout/fragment_start_screen"
+        >
+        <action
+            android:id="@+id/action_startScreen_to_chooseGame"
+            app:destination="@id/chooseGame"/>
+    </fragment>
+    <fragment
+        android:id="@+id/chooseGame"
+        android:name="com.example.quizapp.chooseGame"
+        android:label="chooseGame"
+        tools:layout="@layout/fragment_choose_game"
+        >
+        <argument
+            android:name="Name"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_chooseGame_to_hangman"
+            app:destination="@id/hangman" />
+        <action
+            android:id="@+id/action_chooseGame_to_quizzez"
+            app:destination="@id/quizzez" />
+        <action
+            android:id="@+id/action_chooseGame_to_About2"
+            app:destination="@id/About" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizzez"
+        android:name="com.example.quizapp.Quizzez"
+        android:label="quizzez"
+        tools:layout="@layout/fragment_quizzez"
+        >
+    </fragment>
+    <fragment
+        android:id="@+id/hangman"
+        android:name="com.example.quizapp.Hangman"
+        android:label="hangman"
+        tools:layout="@layout/fragment_hangman"
+        >
+    </fragment>
+    <fragment
+        android:id="@+id/About"
+        android:name="com.example.quizapp.AboutScreen"
+        android:label="about"
+        tools:layout="@layout/fragment_about_screen"
+        >
+    </fragment>
+
+</navigation>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".startScreen">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/game_center"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game Center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        />
+
+    <EditText
+        android:id="@+id/enter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Please Enter Your Name"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:maxLength="40"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/button_Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/play_button"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>
